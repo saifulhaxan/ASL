@@ -1,4 +1,4 @@
-.customButton {
+/* .customButton {
     display: inline-block;
     font-size: 14px;
     line-height: 1;
@@ -12,8 +12,30 @@
     position: relative;
     transition: 0.3s linear;
     cursor: pointer;
-}
+} */
 
+
+.customButton {
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    line-height: 1;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    /* border: 1px solid; */
+    /* border-radius: 6px; */
+    padding: 0.7rem 3.2rem;
+    background: transparent;
+    min-width: 120px;
+    position: relative;
+    transition: 0.3s linear;
+    cursor: pointer;
+    /* background: linear-gradient(91deg, #d2a263 1.57%, #9e6318 102.36%); */
+    border: 0.5px solid var(--grad, #D2A263);
+    background: rgba(26, 26, 26, 0.71);
+}
 .customButton2 {
     display: inline-block;
     font-size: 14px;

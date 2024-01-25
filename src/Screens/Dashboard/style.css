@@ -73,3 +73,233 @@
         border-color: #fff0;
     }
 }
+
+ 
+
+
+.taskCard.text-center.shadow.p-3.rounded-3:hover {
+    background: linear-gradient(91deg, #d2a263 1.57%, #9e6318 102.36%);
+    color: #fff;
+}
+
+.taskCard.text-dark:hover {
+    background: linear-gradient(91deg, #d2a263 1.57%, #9e6318 102.36%);
+    color: #fff;
+}
+
+
+
+button.customButton.primaryButton:hover {
+    background: black;
+}
+ 
+
+
+
+   .ProfileSetup {
+    /* opacity: 0.05; */
+    background: lightgray url(http://localhost:3000/WisdomForLife/static/media/background.ef09e9f….png) 50% / cover no-repeat;
+    z-index: 2px;
+    overflow-y: auto;
+    transition: all 0.35s ease-in-out, left 0.35s ease-in-out, margin-right 0.35s ease-in-out, right 0.35s ease-in-out;
+    background: #0B1228;
+    width: 799px;
+    height: 236px;
+    background: #0B1228;
+    flex-shrink: 0;
+    margin-top: 10%;
+}
+
+
+.profile{
+    color: #FFF;
+
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+img.profileimg {
+    width: 85px;
+    height: 85px;
+    border-radius: 85px;
+    flex-shrink: 0;
+}
+
+
+ 
+
+p.upload {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15.088px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.302px;
+    text-align: center;
+    margin-top: 33px;
+    margin-left: 19px;
+}
+
+
+#username {
+    width: 419px;
+    height: 48.43px;
+    flex-shrink: 0;
+    color: #fff;
+    border-radius: 4.687px;
+    background: #1A1A1A;
+}
+
+
+
+/* .d-flex {
+    display: flex !important;
+    gap: 10%;
+    margin-top: 3%;
+    margin-left: 4%;
+} */
+
+
+.d-flex {
+    display: flex !important;
+    gap: 4%;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+.name {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14.872px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.663px;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+
+
+
+.Upload.d-flex {
+    margin-right: 72%;
+    margin-inline: 10%;
+}
+
+
+
+span.Profile {
+    margin-bottom: 29%;
+    color: #fff;
+    margin-left: 10%;
+}
+
+
+
+.card1img{
+    width: 322px;
+height: 185px;
+flex-shrink: 0;
+border-radius: 10px;
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(167, 106, 38, 0.70) 74.63%),  url('../../Assets//images//card1.png') lightgray 50% / cover no-repeat;
+
+ 
+}
+
+
+.intro{
+    color: #FFF;
+
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.32px;
+}
+.para{
+    width: 307px;
+height: 46px;
+flex-shrink: 0;
+
+color: #D1D1D1;
+
+font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.26px;
+}
+
+
+.cards {
+    width: 41%;
+     height: 186px;
+    /* flex-shrink: 0; */
+    /* border-radius: 10px; */
+    /* background: #FFF; */
+    /* box-shadow: 6px 6px 15px 0px rgba(228, 228, 228, 0.90), -6px -6px 12px 0px rgba(255, 255, 255, 0.90), 6px -6px 12px 0px rgba(228, 228, 228, 0.20), -6px 6px 12px 0px rgba(228, 228, 228, 0.20), -1px -1px 2px 0px rgba(228, 228, 228, 0.50) inset, 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset; */
+}
+.card1img {
+    width: 236px;
+    height: 185px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(167, 106, 38, 0.70) 74.63%), url(http://localhost:3000/WisdomForLife/static/media/card1.3dcd67b….png) lightgray 50% / cover no-repeat;
+}
+
+.card {
+    width: 66%;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    /* box-shadow: 6px 6px 15px 0px rgba(228, 228, 228, 0.90), -6px -6px 12px 0px rgba(255, 255, 255, 0.90), 6px -6px 12px 0px rgba(228, 228, 228, 0.20), -6px 6px 12px 0px rgba(228, 228, 228, 0.20), -1px -1px 2px 0px rgba(228, 228, 228, 0.50) inset, 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset; */
+}
+
+
+.card-img-overlay {
+    position: absolute;
+    top: 66px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: var(--bs-card-img-overlay-padding);
+    /* border-radius: var(--bs-card-inner-border-radius); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

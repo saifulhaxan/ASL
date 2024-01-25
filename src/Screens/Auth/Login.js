@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 import "./style.css";
-
+import google from '../../Assets/images/Google.png'
+import facebook  from '../../Assets/images/Facebook.png'
+ 
 import { AuthLayout } from '../../Components/Layout/AuthLayout';
 import CustomButton from '../../Components/CustomButton';
 import CustomInput from "../../Components/CustomInput"
@@ -108,6 +110,15 @@ const AdminLogin = () => {
                     <div className="mt-4 text-center">
                         <CustomButton variant='primaryButton' text='Login' type='submit' />
                     </div>
+                    <div className="mt-4 text-center">
+                        <button type='submit'  className='googlebtn'>   <img src={google} className='googleimg' />   Login with Google</button>
+                    </div>
+                    <div className="mt-4 text-center">
+                        <button type='submit'  className='googlebtn'>   <img src={facebook} className='googleimg' />   Login with facebook</button>
+                    </div>
+
+
+ 
                 </form>
             </AuthLayout>
         </>

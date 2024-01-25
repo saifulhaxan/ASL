@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
+import card1 from '../../Assets/images/card1.png'
+import Card from 'react-bootstrap/Card';
 
+import card2 from '../../Assets/images/card2.png'
+import card3 from '../../Assets/images/card3.png'
 import { DashboardLayout } from "./../../Components/Layout/DashboardLayout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,6 +13,7 @@ import { CChart } from "@coreui/react-chartjs";
 import { SelectBox } from "../../Components/CustomSelect";
 import { useApi } from "../../Api";
 
+import man from '../../Assets/images/man.jpg'
 import "./style.css";
 import CustomButton from "../../Components/CustomButton";
 import CustomInput from "../../Components/CustomInput";
@@ -85,6 +90,130 @@ export const Dashboard = () => {
 
                       </div>
                     </div>
+
+
+
+
+
+                    <div className="ProfileSetup">
+                      <div>
+                        <div className="d-flex">
+
+
+
+                          <div className="Profile ">
+
+                            <span className="Profile" style={{ marginTop: '4px' }}>Profile Picture</span>
+                            <div className="Upload d-flex">
+
+
+                              <img src={man} className="profileimg" />
+
+                              <p className="upload">Upload a photo</p>
+                            </div></div>
+
+
+
+
+                          <div>
+                            <div>
+                              <CustomInput
+                                label='Email Address'
+                                required
+                                id='userEmail'
+                                type='email'
+                                placeholder='Enter Your Email Address'
+                                labelClass='mainLabel'
+                                inputClass='mainInput'
+
+                              />
+                            </div>
+                            <div>
+                              <p className="name">   Work Phone
+                              </p>
+                              <input
+                                label='Work Phone'
+                                required
+                                id='username'
+                                type='text'
+                                placeholder='Insert Work Phone no'
+                                labelClass='mainLabel'
+                                inputClass='mainInput'
+
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className="cardrow  d-flex   ">
+
+
+
+
+
+<div className="cards text-white">
+      <Card.Img src={card1} className="card1img" alt="Card image" />
+      <Card.ImgOverlay>
+        <Card.Title>Introduction To Company</Card.Title>
+        <Card.Text>
+        Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
+        <Card.Text>Last updated 3 mins ago</Card.Text>
+      </Card.ImgOverlay>
+    </div>
+
+    <div className=" text-white">
+      <Card.Img src={card2} className="card1img" alt="Card image" />
+      <Card.ImgOverlay>
+        <Card.Title>Introduction To Company</Card.Title>
+        <Card.Text>
+        Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
+        <Card.Text>Last updated 3 mins ago</Card.Text>
+      </Card.ImgOverlay>
+    </div>
+    <div className=" text-white">
+      <Card.Img src={card3} className="card1img" alt="Card image" />
+      <Card.ImgOverlay>
+        <Card.Title>Introduction To Company</Card.Title>
+        <Card.Text>
+        Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
+        <Card.Text>Last updated 3 mins ago</Card.Text>
+      </Card.ImgOverlay>
+    </div>
+
+
+{/* <div className="card1">
+  <img  src={card1} className="card1img"/>
+  <p className="intro">Introduction To Company</p>
+  <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+</div> */}
+
+{/* <div className="card1">
+  <img  src={card2} className="card1img"/>
+  <p className="intro">Introduction To Company</p>
+  <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+</div> */}
+{/* <div className="card1">
+  <img  src={card3} className="card1img"/>
+  <p className="intro">Introduction To Company</p>
+  <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+</div> */}
+
+
+</div>
                   </div>
                   <div className="col-md-3">
                     <div className="progressCard">
@@ -112,19 +241,20 @@ export const Dashboard = () => {
                   </div>
                 </div>
               </div>
+
+
+
+
             </div>
+
+
+
+
           </div>
 
-          <CustomInput
-            label='Email Address'
-            required
-            id='userEmail'
-            type='email'
-            placeholder='Enter Your Email Address'
-            labelClass='mainLabel'
-            inputClass='mainInput'
-            
-          />
+
+
+
 
         </div>
       </DashboardLayout>
