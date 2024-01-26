@@ -38,7 +38,7 @@ export const Sidebar = (props) => {
           </Link>
         </li>
         <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/user-management') ? 'active' : ''}`} to="/course-management">
+          <Link className={`sideLink ${location.pathname.includes('#') ? 'active' : ''}`} to="#">
             <span className="sideIcon">
               <FontAwesomeIcon icon={faUser} />
             </span>
@@ -46,7 +46,7 @@ export const Sidebar = (props) => {
           </Link>
         </li>
         <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/book-management') ? 'active' : ''}`} to="/attendance">
+          <Link className={`sideLink ${location.pathname.includes('#') ? 'active' : ''}`} to="#">
             <span className="sideIcon">
               <FontAwesomeIcon icon={faMessage} />
             </span>
@@ -54,7 +54,7 @@ export const Sidebar = (props) => {
           </Link>
         </li>
         <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/recipent-management') ? 'active' : ''}`} to="/News">
+          <Link className={`sideLink ${location.pathname.includes('#') ? 'active' : ''}`} to="#">
             <span className="sideIcon">
               <FontAwesomeIcon icon={faMessage} />
             </span>
@@ -62,7 +62,7 @@ export const Sidebar = (props) => {
           </Link>
         </li>
         <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/book-share-list') ? 'active' : ''}`} to="/book-share-list">
+          <Link className={`sideLink ${location.pathname.includes('#') ? 'active' : ''}`} to="#">
             <span className="sideIcon">
               <FontAwesomeIcon icon={faMessage} />
             </span>

@@ -52,7 +52,7 @@ export const Dashboard = () => {
             <div className="col-12">
               <div className="dashCard">
                 <div className="row">
-                  <div className="col-md-9">
+                  <div className="col-lg-9">
                     <div className="contentCard">
                       <div className="headerCard">
                         <h1 className="text-dark">Welcome Back Steve,</h1>
@@ -61,25 +61,25 @@ export const Dashboard = () => {
                       </div>
                       <div className="mainBodyCard">
                         <div className="row">
-                          <div className="col-md-12">
+                          <div className="col-lg-12">
                             <h3 className="text-dark">Day 1</h3>
                             <p>Here are your first day tasks!</p>
                           </div>
-                          <div className="col-md-4">
+                          <div className="col-xl-4 mb-4 col-lg-6">
                             <div className="taskCard text-center shadow p-3 rounded-3">
                               <h4 className="text-dark">Task Name</h4>
                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>
                               <CustomButton text="Details" variant="primaryButton"></CustomButton>
                             </div>
                           </div>
-                          <div className="col-md-4">
+                          <div className="col-xl-4 mb-4 col-lg-6">
                             <div className="taskCard text-center shadow p-3 rounded-3">
                               <h4 className="text-dark">Task Name</h4>
                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>
                               <CustomButton text="Details" variant="primaryButton"></CustomButton>
                             </div>
                           </div>
-                          <div className="col-md-4">
+                          <div className="col-xl-4 mb-4 col-lg-6">
                             <div className="taskCard text-center shadow p-3 rounded-3">
                               <h4 className="text-dark">Task Name</h4>
                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>
@@ -95,22 +95,31 @@ export const Dashboard = () => {
 
 
 
-                    <div className="ProfileSetup">
+                    <div className="ProfileSetup mt-4">
                       <div className="row">
-                        {/* <div className="col-md-12">
+                        {/* <div className="col-lg-12">
                         <span className="Profile mt-3">Profile Picture</span>
                         </div> */}
-                        <div className="col-md-6">
+                        <div className="col-xl-6">
                           <span className="Profiles">     Profile Picture</span>
                           <div className="Profile d-flex align-items-baseline mt-3">
 
-                            <span><img src={man} className="profileimg" /></span>
-                                                        <span><p className="upload">  Upload a photo</p></span>
-                            {/* <span><p className="upload"> <input type="file" />Upload a photo</p></span> */}
-                            {/* <div className="Upload d-flex">
-                              <img src={man} className="profileimg" />
-                              <p className="upload">Upload a photo</p>
-                            </div> */}
+                              <span><img src={man} className="profileimg" /></span>
+                              {/* <span><p className="upload">  Upload a photo</p></span> */}
+                            
+                              <div class="form-group uploadBtn">
+                              <CustomInput
+                                label="Upload a Photo"
+                                id="photo"
+                                type='file'
+                                labelClass="form-control-file uploadButton text-center"
+                                inputClass="uploadInput d-none"
+                                />
+
+                                <span className="upload_restriction">Min 300 x 300px .JPG oR .PNG</span>
+                                
+                              </div>
+
                           </div>
 
 
@@ -118,7 +127,7 @@ export const Dashboard = () => {
 
 
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-xl-6">
                           <div>
                             <div>
                               <CustomInput
@@ -150,11 +159,11 @@ export const Dashboard = () => {
 
                     </div>
 
-                    <div className="col-md-12">
+                    <div className="col-lg-12">
 
                       <div className="row mt-4">
 
-                        <div className="col-md-4">
+                        <div className="col-xl-4 mb-4 col-lg-6">
 
                         <div className="card1">
                           <p className="intro">Introduction To Company</p>
@@ -162,7 +171,7 @@ export const Dashboard = () => {
                         </div> 
                         </div>
 
-                        <div className="col-md-4">
+                        <div className="col-xl-4 mb-4 col-lg-6">
 
                         <div className="card2">
                           <p className="intro">Introduction To Company</p>
@@ -171,7 +180,7 @@ export const Dashboard = () => {
 
                         </div>
 
-                        <div className="col-md-4">
+                        <div className="col-xl-4 mb-4 col-lg-6">
 
                         <div className="card3">
                           <p className="intro">Introduction To Company</p>
@@ -186,10 +195,23 @@ export const Dashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-lg-3">
                     <div className="progressCard">
                       <div className="shadow p-3 rounded-2 mb-5">
                         <h3 className="text-dark">Your Progress</h3>
+
+                            <div className="progressbar_main">
+                                <div className="progress_front my-3">
+                                  <div className="progress_under">
+                                  </div>
+                                </div>
+
+                                <span className="span_under_progressbar">75%</span>
+                            </div>
+                          
+
+                          
+
                         <ul className="first_list">
                           <li><FontAwesomeIcon icon={faCheckSquare}></FontAwesomeIcon>Lorem Ipsum is simply </li>
                           <li><FontAwesomeIcon icon={faCheckSquare}></FontAwesomeIcon>Lorem Ipsum is simply </li>
@@ -200,12 +222,13 @@ export const Dashboard = () => {
                       </div>
                       <div className="shadow p-3 rounded-2">
                         <h3 className="text-dark">Your Progress</h3>
+
                         <ul className="second_list">
-                          <li><span className="numbering">10</span><span>Lorem Ipsum is simply</span></li>
-                          <li><span className="numbering">10</span><span>Lorem Ipsum is simply</span></li>
-                          <li><span className="numbering">10</span><span>Lorem Ipsum is simply</span></li>
-                          <li><span className="numbering">10</span><span>Lorem Ipsum is simply</span></li>
-                          <li><span className="numbering">10</span><span>Lorem Ipsum is simply</span></li>
+                          <li><span className="numbering">10</span><span className="sample_text">Lorem Ipsum is simply</span></li>
+                          <li><span className="numbering">08</span><span className="sample_text">Lorem Ipsum is simply</span></li>
+                          <li><span className="numbering">15</span><span className="sample_text">Lorem Ipsum is simply</span></li>
+                          <li><span className="numbering">03</span><span className="sample_text">Lorem Ipsum is simply</span></li>
+                          <li><span className="numbering">21</span><span className="sample_text">Lorem Ipsum is simply</span></li>
                         </ul>
                       </div>
                     </div>
