@@ -30,35 +30,35 @@ export const Sidebar = (props) => {
       </Link>
       <ul className="list-unstyled">
         <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/dashboard') ? 'active' : ''}`} to="/dashboard">
+          <Link className={`sideLink ${location.pathname.includes('/dashboard') ? 'active' : ''}`} to="/user-management">
             <span className="sideIcon">
               <FontAwesomeIcon icon={faBorderAll} />
-            </span>
-            <span className="sideLinkText">Dashboard</span>
-          </Link>
-        </li>
-        <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/user-management') ? 'active' : ''}`} to="/user-management">
-            <span className="sideIcon">
-              <FontAwesomeIcon icon={faUser} />
             </span>
             <span className="sideLinkText">User Management</span>
           </Link>
         </li>
         <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/book-management') ? 'active' : ''}`} to="/book-management">
+          <Link className={`sideLink ${location.pathname.includes('/user-management') ? 'active' : ''}`} to="/course-management">
             <span className="sideIcon">
-              <FontAwesomeIcon icon={faMessage} />
+              <FontAwesomeIcon icon={faUser} />
             </span>
-            <span className="sideLinkText">Book Management</span>
+            <span className="sideLinkText">Course Management</span>
           </Link>
         </li>
         <li className="sidebar-li">
-          <Link className={`sideLink ${location.pathname.includes('/recipent-management') ? 'active' : ''}`} to="/recipent-management">
+          <Link className={`sideLink ${location.pathname.includes('/book-management') ? 'active' : ''}`} to="/attendance">
             <span className="sideIcon">
               <FontAwesomeIcon icon={faMessage} />
             </span>
-            <span className="sideLinkText">Recipent Management</span>
+            <span className="sideLinkText">Attendance</span>
+          </Link>
+        </li>
+        <li className="sidebar-li">
+          <Link className={`sideLink ${location.pathname.includes('/recipent-management') ? 'active' : ''}`} to="/News">
+            <span className="sideIcon">
+              <FontAwesomeIcon icon={faMessage} />
+            </span>
+            <span className="sideLinkText">News</span>
           </Link>
         </li>
         <li className="sidebar-li">

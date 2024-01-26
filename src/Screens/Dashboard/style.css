@@ -98,52 +98,36 @@ button.customButton.primaryButton:hover {
 
    .ProfileSetup {
     /* opacity: 0.05; */
-    background: lightgray url(http://localhost:3000/WisdomForLife/static/media/background.ef09e9f….png) 50% / cover no-repeat;
-    z-index: 2px;
-    overflow-y: auto;
+    background-image: url('../../Assets//images/bgimg.png');
+    background-size: cover;
+    /* z-index: 2px; */
+    /* overflow-y: auto; */
     transition: all 0.35s ease-in-out, left 0.35s ease-in-out, margin-right 0.35s ease-in-out, right 0.35s ease-in-out;
-    background: #0B1228;
-    width: 799px;
-    height: 236px;
-    background: #0B1228;
-    flex-shrink: 0;
+    /* background: #0B1228; */
+    /* width: 799px; */
+    /* height: 236px; */
+    padding: 17px 35px;
+    /* background: #0B1228; */
+    /* flex-shrink: 0; */
     margin-top: 10%;
 }
 
 
 .profile{
-    color: #FFF;
-
-    font-family: Poppins;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.44px;
-    text-transform: capitalize;
+    display: flex;
+    align-items: baseline;
+    gap: 13px;
 }
 
-
-
-
-
-
-
-
-
-
-
+ 
 img.profileimg {
-    width: 85px;
-    height: 85px;
+    width: 70px;
+    height: 70px;
     border-radius: 85px;
     flex-shrink: 0;
 }
-
-
  
-
-p.upload {
+/* p.upload {
     color: #FFF;
     font-family: Poppins;
     font-size: 15.088px;
@@ -152,20 +136,25 @@ p.upload {
     line-height: normal;
     letter-spacing: 0.302px;
     text-align: center;
-    margin-top: 33px;
+    margin-top: 15px;
     margin-left: 19px;
-}
+} */
 
 
-#username {
+/* #username {
     width: 419px;
     height: 48.43px;
     flex-shrink: 0;
     color: #fff;
     border-radius: 4.687px;
     background: #1A1A1A;
-}
+} */
 
+
+.customNumber {
+    border: 1px solid #1A1A1A;
+    background-color: #1A1A1A;
+}
 
 
 /* .d-flex {
@@ -201,12 +190,19 @@ p.upload {
     margin-inline: 10%;
 }
 
-
-
-span.Profile {
-    margin-bottom: 29%;
+.upload{
+    padding: 8px 15px;
+    border-radius: 8px;
+    background: linear-gradient(91deg, #d2a263 1.57%, #9e6318 102.36%);
     color: #fff;
-    margin-left: 10%;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+span.Profiles {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
 }
 
 
@@ -216,35 +212,47 @@ span.Profile {
 height: 185px;
 flex-shrink: 0;
 border-radius: 10px;
-background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(167, 106, 38, 0.70) 74.63%),  url('../../Assets//images//card1.png') lightgray 50% / cover no-repeat;
+background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(167, 106, 38, 0.70) 74.63%),  url('../../Assets//images//card1.png') lightgray 50% / cover no-repeat;
 
  
 }
 
+.card1 {
+    background-image: url('../../Assets//images/profile-01.png');
+    background-size: cover;
+    padding-top: 75px;
+    padding: 70px 15px 6px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.card2{
+    background-image: url('../../Assets//images/profile-02.png');
+    background-size: cover;
+    padding-top: 75px;
+    padding: 70px 15px 6px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.card3 {
+    background-image: url('../../Assets//images/profile-03.png');
+    background-size: cover;
+    padding-top: 75px;
+    padding: 70px 15px 6px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
 
 .intro{
-    color: #FFF;
-
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.32px;
+    font-size: 14px;
+    font-weight: 600;
 }
+
 .para{
-    width: 307px;
-height: 46px;
-flex-shrink: 0;
-
-color: #D1D1D1;
-
-font-family: Poppins;
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.26px;
+    font-size: 12px;
 }
 
 
@@ -283,6 +291,10 @@ letter-spacing: 0.26px;
     padding: var(--bs-card-img-overlay-padding);
     /* border-radius: var(--bs-card-inner-border-radius); */
 }
+
+
+
+
 
 
 

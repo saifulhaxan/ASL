@@ -96,25 +96,29 @@ export const Dashboard = () => {
 
 
                     <div className="ProfileSetup">
-                      <div>
-                        <div className="d-flex">
+                      <div className="row">
+                        {/* <div className="col-md-12">
+                        <span className="Profile mt-3">Profile Picture</span>
+                        </div> */}
+                        <div className="col-md-6">
+                          <span className="Profiles">     Profile Picture</span>
+                          <div className="Profile d-flex align-items-baseline mt-3">
 
-
-
-                          <div className="Profile ">
-
-                            <span className="Profile" style={{ marginTop: '4px' }}>Profile Picture</span>
-                            <div className="Upload d-flex">
-
-
+                            <span><img src={man} className="profileimg" /></span>
+                                                        <span><p className="upload">  Upload a photo</p></span>
+                            {/* <span><p className="upload"> <input type="file" />Upload a photo</p></span> */}
+                            {/* <div className="Upload d-flex">
                               <img src={man} className="profileimg" />
-
                               <p className="upload">Upload a photo</p>
-                            </div></div>
+                            </div> */}
+                          </div>
 
 
 
 
+
+                        </div>
+                        <div className="col-md-6">
                           <div>
                             <div>
                               <CustomInput
@@ -129,22 +133,58 @@ export const Dashboard = () => {
                               />
                             </div>
                             <div>
-                              <p className="name">   Work Phone
-                              </p>
-                              <input
-                                label='Work Phone'
+                              <CustomInput
+                                label='Phone No'
                                 required
-                                id='username'
-                                type='text'
-                                placeholder='Insert Work Phone no'
-                                labelClass='mainLabel'
-                                inputClass='mainInput'
+                                id='number'
+                                type='number'
+                                placeholder='Enter Phone'
+                                labelClass='mainLabel text-white'
+                                inputClass='mainInput customNumber'
 
                               />
                             </div>
                           </div>
                         </div>
-                      </div>    </div>
+                      </div>
+
+                    </div>
+
+                    <div className="col-md-12">
+
+                      <div className="row mt-4">
+
+                        <div className="col-md-4">
+
+                        <div className="card1">
+                          <p className="intro">Introduction To Company</p>
+                          <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                        </div> 
+                        </div>
+
+                        <div className="col-md-4">
+
+                        <div className="card2">
+                          <p className="intro">Introduction To Company</p>
+                          <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                        </div> 
+
+                        </div>
+
+                        <div className="col-md-4">
+
+                        <div className="card3">
+                          <p className="intro">Introduction To Company</p>
+                          <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                        </div> 
+
+                        </div>
+
+                        
+        
+
+                      </div>
+                    </div>
 
 
 
@@ -159,61 +199,62 @@ export const Dashboard = () => {
 
 
 
-<div className="cardrow  d-flex   ">
+                    <div className="cardrow  d-flex   ">
 
 
 
 
 
-<div className="cards text-white">
-      <Card.Img src={card1} className="card1img" alt="Card image" />
-      <Card.ImgOverlay>
-        <Card.Title>Introduction To Company</Card.Title>
-        <Card.Text>
-        Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
-      </Card.ImgOverlay>
-    </div>
+                      {/* <div className="cards text-white">
+                        <Card.Img src={card1} className="card1img" alt="Card image" />
+                        <Card.ImgOverlay>
+                          <Card.Title>Introduction To Company</Card.Title>
+                          <Card.Text>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
+                          <Card.Text>Last updated 3 mins ago</Card.Text>
+                        </Card.ImgOverlay>
+                      </div>
 
-    <div className=" text-white">
-      <Card.Img src={card2} className="card1img" alt="Card image" />
-      <Card.ImgOverlay>
-        <Card.Title>Introduction To Company</Card.Title>
-        <Card.Text>
-        Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
-      </Card.ImgOverlay>
-    </div>
-    <div className=" text-white">
-      <Card.Img src={card3} className="card1img" alt="Card image" />
-      <Card.ImgOverlay>
-        <Card.Title>Introduction To Company</Card.Title>
-        <Card.Text>
-        Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
-      </Card.ImgOverlay>
-    </div>
+                      <div className=" text-white">
+                        <Card.Img src={card2} className="card1img" alt="Card image" />
+                        <Card.ImgOverlay>
+                          <Card.Title>Introduction To Company</Card.Title>
+                          <Card.Text>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
+                          <Card.Text>Last updated 3 mins ago</Card.Text>
+                        </Card.ImgOverlay>
+                      </div>
+                      <div className=" text-white">
+                        <Card.Img src={card3} className="card1img" alt="Card image" />
+                        <Card.ImgOverlay>
+                          <Card.Title>Introduction To Company</Card.Title>
+                          <Card.Text>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
+                          <Card.Text>Last updated 3 mins ago</Card.Text>
+                        </Card.ImgOverlay>
+                      </div> */}
 
 
-{/* <div className="card1">
+                      {/* <div className="card1">
   <img  src={card1} className="card1img"/>
   <p className="intro">Introduction To Company</p>
   <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-</div> */}
+</div>  */}
 
-{/* <div className="card1">
+                      {/* <div className="card1">
   <img  src={card2} className="card1img"/>
   <p className="intro">Introduction To Company</p>
   <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 </div> */}
-{/* <div className="card1">
+                      {/* <div className="card1">
   <img  src={card3} className="card1img"/>
   <p className="intro">Introduction To Company</p>
   <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-</div> */}
-
-
 </div>
+*/}
+      
+
+                    </div>
                   </div>
                   <div className="col-md-3">
                     <div className="progressCard">
