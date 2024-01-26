@@ -185,82 +185,12 @@ export const Dashboard = () => {
 
                       </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <div className="cardrow  d-flex   ">
-
-
-
-
-
-                      {/* <div className="cards text-white">
-                        <Card.Img src={card1} className="card1img" alt="Card image" />
-                        <Card.ImgOverlay>
-                          <Card.Title>Introduction To Company</Card.Title>
-                          <Card.Text>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
-                          <Card.Text>Last updated 3 mins ago</Card.Text>
-                        </Card.ImgOverlay>
-                      </div>
-
-                      <div className=" text-white">
-                        <Card.Img src={card2} className="card1img" alt="Card image" />
-                        <Card.ImgOverlay>
-                          <Card.Title>Introduction To Company</Card.Title>
-                          <Card.Text>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
-                          <Card.Text>Last updated 3 mins ago</Card.Text>
-                        </Card.ImgOverlay>
-                      </div>
-                      <div className=" text-white">
-                        <Card.Img src={card3} className="card1img" alt="Card image" />
-                        <Card.ImgOverlay>
-                          <Card.Title>Introduction To Company</Card.Title>
-                          <Card.Text>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting  </Card.Text>
-                          <Card.Text>Last updated 3 mins ago</Card.Text>
-                        </Card.ImgOverlay>
-                      </div> */}
-
-
-                      {/* <div className="card1">
-  <img  src={card1} className="card1img"/>
-  <p className="intro">Introduction To Company</p>
-  <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-</div>  */}
-
-                      {/* <div className="card1">
-  <img  src={card2} className="card1img"/>
-  <p className="intro">Introduction To Company</p>
-  <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-</div> */}
-                      {/* <div className="card1">
-  <img  src={card3} className="card1img"/>
-  <p className="intro">Introduction To Company</p>
-  <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-</div>
-*/}
-      
-
-                    </div>
                   </div>
                   <div className="col-md-3">
                     <div className="progressCard">
                       <div className="shadow p-3 rounded-2 mb-5">
                         <h3 className="text-dark">Your Progress</h3>
-                        <ul>
+                        <ul className="first_list">
                           <li><FontAwesomeIcon icon={faCheckSquare}></FontAwesomeIcon>Lorem Ipsum is simply </li>
                           <li><FontAwesomeIcon icon={faCheckSquare}></FontAwesomeIcon>Lorem Ipsum is simply </li>
                           <li><FontAwesomeIcon icon={faCheckSquare}></FontAwesomeIcon>Lorem Ipsum is simply </li>
@@ -270,12 +200,12 @@ export const Dashboard = () => {
                       </div>
                       <div className="shadow p-3 rounded-2">
                         <h3 className="text-dark">Your Progress</h3>
-                        <ul>
-                          <li><FontAwesomeIcon icon={faCheckSquare}></FontAwesomeIcon>Lorem Ipsum is simply </li>
-                          <li><FontAwesomeIcon icon={faCheckSquare}></FontAwesomeIcon>Lorem Ipsum is simply </li>
-                          <li><FontAwesomeIcon icon={faCheckSquare}></FontAwesomeIcon>Lorem Ipsum is simply </li>
-                          <li><FontAwesomeIcon icon={faCheckSquare}></FontAwesomeIcon>Lorem Ipsum is simply </li>
-                          <li><FontAwesomeIcon icon={faCheckSquare}></FontAwesomeIcon>Lorem Ipsum is simply </li>
+                        <ul className="second_list">
+                          <li><span className="numbering">10</span><span>Lorem Ipsum is simply</span></li>
+                          <li><span className="numbering">10</span><span>Lorem Ipsum is simply</span></li>
+                          <li><span className="numbering">10</span><span>Lorem Ipsum is simply</span></li>
+                          <li><span className="numbering">10</span><span>Lorem Ipsum is simply</span></li>
+                          <li><span className="numbering">10</span><span>Lorem Ipsum is simply</span></li>
                         </ul>
                       </div>
                     </div>
